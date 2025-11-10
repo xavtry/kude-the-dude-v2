@@ -1,1 +1,13 @@
-
+:root{--bg:#0b1220;--panel:#07101a;--accent:#2b6ad6;--txt:#e6eef8}
+body{margin:0;font-family:Inter,system-ui,Arial;background:var(--bg);color:var(--txt)}
+.app-header{padding:10px 16px;background:linear-gradient(90deg,#07101a,#0b1220);font-weight:700}
+.mini-browser{display:flex;flex-direction:column;height:80vh;margin:12px;border-radius:10px;overflow:hidden;background:var(--panel)}
+.toolbar{display:flex;align-items:center;gap:8px;padding:8px}
+.left-controls button, .right-controls button{padding:6px 10px;border-radius:6px;border:0;background:#12202a;color:var(--txt);cursor:pointer}
+.address{flex:1;display:flex;gap:6px}
+.address input{flex:1;padding:8px;border-radius:6px;border:1px solid #22303f;background:#0b1220;color:var(--txt)}
+.tabs-row{display:flex;gap:6px;padding:8px;background:#07101a;overflow:auto}
+.tab{display:flex;align-items:center;gap:8px;padding:6px 10px;background:#152232;border-radius:6px;cursor:pointer}
+.tab.active{background:var(--accent)}
+.tab .fav{width:16px;height:16px}
+.browser-area{flex:1;background:#fff}
